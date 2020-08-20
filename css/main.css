@@ -1,0 +1,326 @@
+html,
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 22px;
+  margin: 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --------- Header --------- */
+
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.main h1 {
+  font-family: 'Montserrat', sans-serif;
+  color: #7a82ab;
+  font-size: 1.65rem;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  padding: 1.7rem 0 1.7rem 0;
+}
+
+header nav {
+  background-color: #7A82AB;
+  color: White;
+  padding: .7rem 0 .7rem 0;
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 1rem 0 1rem;
+  font-size: 1rem;
+}
+
+.main img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+/* --------- Description --------- */
+
+.supporting,
+.rating,
+.gallery,
+.location {
+  margin: 2rem auto;
+}
+
+.supporting {
+  padding: 0 2rem .25rem 2rem;
+}
+
+.supporting h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.supporting p {
+  font-size: 1rem;
+  padding-top: .5rem;
+}
+
+/* --------- Rating --------- */
+
+.rating {
+  background-color: #307473;
+  height: 15rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating h2 {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2rem;
+  font-weight: 400;
+  padding: 1.5rem 3rem 0 3rem;
+}
+
+.rating p {
+  padding-left: 20rem;
+}
+
+/* --------- Gallery --------- */
+
+.gallery {
+  padding-top: 2rem;
+}
+
+.gallery img {
+  display: block;
+  width: 31%;
+  margin: 1%;
+  float: left;
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* --------- Location --------- */
+
+.location .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location p {
+  font-size: 1.4rem;
+  font-variant: small-caps;
+  padding: 2rem 4rem;
+}
+
+/* --------- Footer --------- */
+
+footer {
+  background-color: #CC7266;
+  padding: 1.5rem;
+}
+
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  color: white;
+}
+
+footer nav {
+  color: White;
+  text-align: center;
+}
+
+footer ul {
+  text-align: center;
+  margin: 0;
+}
+
+li {
+  font-size: .8rem;
+  display: inline-block;
+  padding: 0 .4rem 0 .4rem;
+}
+
+
+/* --------- Media Queries --------- */
+
+
+@media only screen and (max-width: 700px) {
+
+  .main h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem 5rem;
+  }
+
+  header nav {
+    background-color: #7A82AB;
+    color: White;
+    padding: .4rem 0 .4rem 0;
+    text-align: center;
+  }
+
+  header li {
+    display: inline-block;
+    padding: 0 1rem 0 1rem;
+    font-size: 1rem;
+  }
+
+  .supporting {
+    padding: 0 2rem;
+  }
+
+  .supporting h2 {
+    font-size: 1.3rem;
+  }
+
+  .supporting p {
+    font-size: .9rem;
+  }
+
+  .rating h2 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    padding: 1.5rem 3rem 0 3rem;
+  }
+
+  .rating p {
+    padding-left: 9rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .gallery {
+    padding: 0;
+  }
+
+  .location p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    padding: 0 4rem;
+    text-align: center;
+  }
+
+  footer .container {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  footer ul {
+    padding: 0 .9rem;
+  }
+
+  li {
+    font-size: .9rem;
+    display: inline-block;
+    padding: .7rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 470px) {
+
+  .main h1 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: .75rem;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .main img {
+    border-top: 1rem solid #7a82ab;
+    border-bottom: 1rem solid #7a82ab;
+  }
+
+  .supporting {
+    padding: 0 2rem;
+  }
+
+  .supporting h2 {
+    font-size: 1.3rem;
+  }
+
+  .rating {
+    padding-top: 1rem;
+  }
+
+  .rating .container: {
+    margin-bottom: 0;
+  }
+
+  .rating h2 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding: 1rem 1rem 0 1rem;
+    text-align: center;
+  }
+
+  .rating p {
+    padding: 0 1rem 2rem 1rem;
+    text-align: center;
+  }
+
+  .gallery {
+    padding: 0;
+  }
+
+  .gallery img {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .location p {
+    margin: 0;
+    padding: 0 1.5rem;
+  }
+
+  footer .container {
+    display: block;
+    text-align: center;
+  }
+
+  .copyright {
+    font-size: .8rem;
+  }
+
+  footer ul {
+    padding: .8rem .8rem 0 .8rem;
+  }
+
+  li {
+    font-size: .8rem;
+    display: inline-block;
+    padding: .3rem;
+  }
+
+}
